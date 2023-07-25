@@ -1,6 +1,5 @@
 import flatpickr from 'flatpickr';
 import '//node_modules/flatpickr/dist/flatpickr.min.css';
-const flatpickr = require('flatpickr');
 
 const datePicker = document.querySelector('input#datetime-picker');
 
@@ -14,7 +13,7 @@ const options = {
   },
 };
 
-flatpickr(datePicker, options);
+const flatpickrInstance = flatpickr(datePicker, options);
 
 const startButton = document.querySelector('button[data-start]');
 const daysValue = document.querySelector('[data-days]');
